@@ -1,0 +1,17 @@
+@media screen and (min-width: 480px) {
+  .container {
+    width: calc(396px + 16px + 16px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header-list {
+    display: none;
+  }
+
+  address {
+    display: none;
+  }
+}

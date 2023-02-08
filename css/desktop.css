@@ -2,4 +2,27 @@
   .container {
     width: calc(1128px + 16px + 16px);
   }
+  .title {
+    font-weight: 500;
+    font-size: 20px;
+  }
+  .features-list {
+    gap: 24px;
+  }
+
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
+
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .team-list {
+    gap: 24px;
+  }
+  .team-list-item {
+    width: calc((100% - 72px) / 4);
+  }
 }

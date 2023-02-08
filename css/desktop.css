@@ -45,6 +45,12 @@
     align-items: baseline;
     margin-right: 80px;
   }
+  .header-logo-accent {
+    margin-right: 76px;
+  }
+  .header-contacts {
+    gap: 40px;
+  }
 
   .hero-title {
     max-width: 500px;

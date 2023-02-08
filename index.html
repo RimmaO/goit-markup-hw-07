@@ -62,13 +62,75 @@
           </svg>
         </button>
 
-        <!-- <div class="mobile-menu">
-          <button type="submit" class="mobile-menu-close-btn">
-            <svg class="mobile-menu-close-icon" width="8" height="8">
-              <use href="./images/icons.svg#close-modal"></use>
-            </svg>
-          </button> 
-        </div>  -->
+        <div class="mobile-menu">
+          <div class="container mobile-menu-container">
+            <button type="submit" class="mobile-menu-close-btn">
+              <svg class="mobile-menu-close-icon" width="8" height="8">
+                <use href="./images/icons.svg#close-modal"></use>
+              </svg>
+            </button>
+
+            <ul class="mobile-menu-list list">
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Studio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link">Portfolio</a>
+              </li>
+              <li class="mobile-menu-item">
+                <a href="" class="mobile-menu-link link active">Contacts</a>
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-contacts list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  href="tel:+110001111111"
+                  class="mobile-menu-contacts-link active-tel link"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="mobile-menu-contacts-item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu-contacts-link link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu-soc list">
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link link"
+                  ><svg class="mobile-menu-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link link"
+                  ><svg class="team-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link link"
+                  ><svg class="team-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mobile-menu-soc-item">
+                <a href="" class="mobile-menu-soc-link link"
+                  ><svg class="team-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-team-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <address>
           <ul class="header-contacts list">
@@ -568,7 +630,7 @@
       </div>
     </footer>
     <!-------------MODAL WINDOW ------------------------->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-btn-icon" width="8" height="8">
@@ -578,9 +640,9 @@
 
         <h3 class="modal-text">
           Leave your contacts and we will call you back
-        </h3> -->
-    <!------------- MODAL FORM ------------------------->
-    <!-- <form class="modal-form" method="POST" action="javascript:void(0)">
+        </h3>
+        <!------------- MODAL FORM ------------------------->
+        <form class="modal-form" method="POST" action="javascript:void(0)">
           <label class="modal-form-field">
             <span class="modal-form-input-desc">Name</span>
             <div class="modal-form-input-svg">
@@ -645,19 +707,22 @@
             </span>
             I accept the terms and conditions of the&nbsp;
             <a href="" class="modal-form-check-link">Privacy Policy</a>
-          </label> -->
-    <!-- <svg class="modal-form-check-icon" width="8" height="8">
-              <use href="./images/icons.svg#icon-on"></use>
-            </svg> -->
+          </label>
 
-    <!-- неразривний пробел мнемоника - &nbsp -->
+          <!-- <svg class="modal-form-check-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-on"></use>
+          </svg> -->
 
-    <!-- <button class="modal-form-btn" type="submit">
+          <!-- інший спосіб для svg
+            неразривний пробел мнемоника - &nbsp -->
+
+          <button class="modal-form-btn" type="submit">
             <span class="modal-form-btn-text">Send</span>
           </button>
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

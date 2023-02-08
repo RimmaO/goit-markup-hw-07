@@ -2,6 +2,14 @@
   .container {
     width: calc(736px + 16px + 16px);
   }
+  .mobile-menu-open,
+  .mobile-menu {
+    display: none;
+  }
+  .header-logo-accent {
+    margin-right: 120px;
+  }
+
   .features-item {
     width: calc((100% - 24px) / 2);
   }
@@ -46,7 +54,7 @@
   .hero-title {
     font-size: 56px;
     line-height: 1.07;
-    max-width: 494px;
+    max-width: 496px;
     margin-bottom: 40px;
   }
 

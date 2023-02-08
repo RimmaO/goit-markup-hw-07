@@ -8,15 +8,51 @@
 
   .team {
     padding-bottom: 104px;
-    padding-left: 108px;
-    padding-right: 108px;
   }
+
   .team-list {
     row-gap: 64px;
     column-gap: 24px;
   }
   .team-list-item {
     width: calc((100% - 24px) / 2);
+  }
+  .small-container {
+    width: calc(264px * 2 + 24px + 16px + 16px);
+  }
+
+  .customers-list {
+    column-gap: 24px;
+  }
+
+  .customers-list-item {
+    width: calc((100% - 24px * 2) / 3);
+  }
+  .footer-container {
+    align-items: baseline;
+    justify-content: start;
+  }
+  .footer-logo-text {
+    margin-right: 24px;
+  }
+  .footer-form-input {
+    min-width: 264px;
+  }
+
+  .footer-form-field {
+    margin-right: 24px;
+  }
+
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 494px;
+    margin-bottom: 40px;
+  }
+
+  .hero {
+    padding-top: 112px;
+    padding-bottom: 108px;
   }
 }
 

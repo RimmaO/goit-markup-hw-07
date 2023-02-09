@@ -4,6 +4,7 @@
   }
   .hero {
     background-image: var(--gra), url(../images/tablet-hero-bg.jpg);
+    background-size: 1440px;
   }
   .mobile-menu-open,
   .mobile-menu {
@@ -74,6 +75,10 @@
 
   .work {
     display: none;
+  }
+
+  .footer-logo-text {
+    margin-bottom: 72px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),

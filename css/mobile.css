@@ -14,9 +14,7 @@
   address {
     display: none;
   }
-  .title {
-    text-align: center;
-  }
+
   .hero-title {
     text-transform: capitalize;
   }
@@ -27,6 +25,13 @@
 
   .footer-logo-accent {
     display: block;
+  }
+
+  .footer-form-field {
+    margin-bottom: 16px;
+  }
+  .footer-soc {
+    margin-bottom: 72px;
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),

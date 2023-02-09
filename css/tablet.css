@@ -4,7 +4,6 @@
   }
   .hero {
     background-image: var(--gra), url(../images/tablet-hero-bg.jpg);
-    background-size: 1440px;
   }
   .mobile-menu-open,
   .mobile-menu {

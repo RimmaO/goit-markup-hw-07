@@ -6,6 +6,12 @@
   }
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .footer-form-input {
+    width: 396px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .header-list {
     display: none;
@@ -18,6 +24,7 @@
   .hero-title {
     text-transform: capitalize;
   }
+
   .footer-text-soc,
   .footer-form-text {
     text-align: center;

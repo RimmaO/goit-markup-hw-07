@@ -893,8 +893,10 @@ ul {
   border-left: 1px solid #e7e9fc;
 }
 .portfolio-title {
+  text-align: start;
 }
 .portfolio-text {
+  text-align: start;
 }
 /* ---------------------MODAL WINDOW-----------------------------*/
 .backdrop {

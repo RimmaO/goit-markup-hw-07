@@ -2,6 +2,9 @@
   .container {
     width: calc(1128px + 16px + 16px);
   }
+  .hero {
+    background-image: var(--gra), url(../images/hero-bg.jpg);
+  }
   .title {
     font-weight: 500;
     font-size: 20px;
@@ -60,5 +63,13 @@
     padding-top: 188px;
     padding-bottom: 188px;
     max-width: 1440px;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px),
+  screen and (min-resolution: 192dpi) and(min-width: 1200px),
+  screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: var(--gra), url(../images/hero-bg@2x.jpg);
   }
 }

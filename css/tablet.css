@@ -2,6 +2,9 @@
   .container {
     width: calc(736px + 16px + 16px);
   }
+  .hero {
+    background-image: var(--gra), url(../images/tablet-hero-bg.jpg);
+  }
   .mobile-menu-open,
   .mobile-menu {
     display: none;
@@ -71,5 +74,13 @@
 
   .work {
     display: none;
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
+  screen and (min-resolution: 192dpi) and(min-width: 768px),
+  screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: var(--gra), url(../images/tablet-hero-bg@2x.jpg);
   }
 }

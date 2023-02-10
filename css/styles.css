@@ -182,9 +182,10 @@ ul {
   width: 100%;
   height: 100%;
   max-height: 796px;
+
   background-color: #ffffff;
-  box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.1);
 }
+
 .js-menu-container {
   opacity: 0;
   visibility: hidden;
@@ -203,25 +204,30 @@ ul {
   position: relative;
   padding-top: 80px;
   padding-bottom: 40px;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .mobile-menu-close-btn {
   position: absolute;
   top: 40px;
   right: 40px;
+
   display: flex;
   justify-content: center;
   align-items: center;
+
   width: 24px;
   height: 24px;
   border-radius: 50%;
   padding: 0;
 
-  background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #e7e9fc;
   color: rgba(0, 0, 0, 1);
   fill: currentColor;
-
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -233,11 +239,9 @@ ul {
 .mobile-menu-close-icon {
 }
 
-.modal-close-btn .header-list {
-  display: flex;
-  gap: 40px;
+.mobile-menu-list {
+  margin-bottom: 70px;
 }
-
 .mobile-menu-link {
   font-weight: 700;
   font-size: 36px;
@@ -247,19 +251,23 @@ ul {
   text-transform: capitalize;
 
   color: var(--title-logo-link-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+  color: var(--hover-focus-color);
 }
 .mobile-menu-item:not(:last-child) {
-  display: block;
   margin-bottom: 40px;
 }
 
-.active {
-  color: var(--hover-focus-color);
-}
 .mobile-menu-contacts {
-  margin-top: 284px;
   margin-bottom: 48px;
 }
+
 .mobile-menu-contacts-link {
   font-weight: 500;
   font-size: 20px;
@@ -269,46 +277,41 @@ ul {
 
   color: var(--text-contacts-color);
 }
-
-.mobile-menu-contacts-item {
-  margin-bottom: 40px;
-}
 .active-tel {
   font-weight: 600;
-  font-size: 36px;
+  font-size: 30px;
   line-height: 1.11;
   text-transform: capitalize;
 
   color: var(--accent-color);
 }
-.mobile-menu-contacts-link .mobile-menu-soc {
-  display: flex;
-  justify-content: center;
-  gap: 56px;
+
+.mobile-menu-contacts-item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .mobile-menu-soc {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 56px;
 }
 .mobile-menu-soc-item {
-  height: 40px;
   width: 40px;
+  height: 40px;
 }
 .mobile-menu-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   background-color: var(--accent-color);
   color: var(--footer-logo-color);
 }
+
 .header-list {
   display: flex;
   gap: 40px;
@@ -382,7 +385,6 @@ ul {
 .hero {
   padding-top: 112px;
   padding-bottom: 112px;
-
   margin: auto;
 
   background-color: var(--hero-footer-bgc);
@@ -392,28 +394,36 @@ ul {
   background-size: cover;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--gra), url(../images/mobile-hero-bg@2x.jpg);
+  }
+}
 .hero-container {
 }
 .hero-title {
-  font-size: 36px;
+  max-width: 318px;
+  margin: 0 auto;
+  margin-bottom: 72px;
+
+  font-size: 32px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
 
   color: var(--hero-title-btn-color);
-
-  max-width: 319px;
-  margin: 0 auto;
-  margin-bottom: 72px;
 }
 
 .hero-btn,
 .modal-form-btn {
+  display: block;
   min-width: 169px;
   height: 56px;
   padding: 16px 32px;
   margin: 0 auto;
-  display: block;
 
   font-family: inherit;
   font-style: normal;
@@ -421,6 +431,7 @@ ul {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
+
   /*  щоб забрати border від браузера */
   border: 1px solid transparent;
   border-radius: 4px;
@@ -467,13 +478,12 @@ ul {
 .features-item-icon {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin-bottom: 8px;
-
   max-width: 264px;
   height: 112px;
-  border-radius: 4px;
 
+  border-radius: 4px;
+  align-items: center;
   background: #f4f4fd;
 }
 .feature-icon {
@@ -513,10 +523,9 @@ ul {
 }
 .team-list-item {
   width: 100%;
+
   border-radius: 0px 0px 4px 4px;
-
   background-color: var(--team-list-item-bgc);
-
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -526,7 +535,9 @@ ul {
 }
 
 .team-title {
-  text-align: center;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
 }
 .team-text {
   text-align: center;
@@ -545,17 +556,16 @@ ul {
   width: 40px;
 }
 .team-soc-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 100%;
   border-radius: 50px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  background-color: var(--accent-color);
   color: var(--footer-logo-color);
   fill: currentColor;
+  background-color: var(--accent-color);
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -587,13 +597,14 @@ ul {
   height: 88px;
 }
 .customers-list-link {
-  width: 100%;
-  height: 100%;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
 
   color: #8e8f99;
   transition-property: border;
@@ -653,24 +664,23 @@ ul {
 }
 
 .footer-text {
+  margin-top: 16px;
+  max-width: 268px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
 
   color: var(--footer-text-color);
-
-  margin-top: 16px;
-  max-width: 264px;
 }
 
 .footer-text-soc,
 .footer-form-text {
+  margin-bottom: 16px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
-
-  margin-bottom: 16px;
 
   color: var(--hero-title-btn-color);
 }
@@ -685,12 +695,11 @@ ul {
 }
 
 .footer-soc-link {
-  width: 100%;
-  height: 100%;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
 
   border-radius: 50px;
   color: var(--footer-logo-color);
@@ -714,16 +723,17 @@ ul {
   padding-left: 16px;
   padding-top: 8px;
   padding-bottom: 8px;
-
+  width: 300px;
   height: 40px;
 
+  font-size: 12px;
+  line-height: 2;
+  border-radius: 4px;
   color: var(--footer-text-color);
-  font-size: 16px;
+  background-color: transparent;
   outline: 1px solid transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-  border-radius: 4px;
-  background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-form-input:focus {
@@ -741,7 +751,6 @@ ul {
 .footer-form-btn {
   display: flex;
   align-items: center;
-
   min-width: 165px;
   height: 40px;
   padding-left: 24px;

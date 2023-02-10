@@ -3,8 +3,9 @@
     width: calc(736px + 16px + 16px);
   }
   .hero {
-    background-image: var(--gra), url(../images/tablet-hero-bg.jpg);
+    background-image: var(--gra), url(../images/hero-bg.jpg);
   }
+
   .mobile-menu-open,
   .mobile-menu {
     display: none;
@@ -80,11 +81,12 @@
     margin-bottom: 72px;
   }
 }
+
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px),
   screen and (min-resolution: 192dpi) and(min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .hero {
-    background-image: var(--gra), url(../images/tablet-hero-bg@2x.jpg);
+    background-image: var(--gra), url(../images/hero-bg@2x.jpg);
   }
 }

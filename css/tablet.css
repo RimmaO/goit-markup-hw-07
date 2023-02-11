@@ -147,11 +147,19 @@
   }
 
   .filter-list {
-    display: flex;
     justify-content: center;
     align-items: center;
     gap: 24px;
     margin-bottom: 64px;
+  }
+
+  .portfolio-list {
+    flex-direction: row;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+  .portfolio-item {
+    width: calc((100% - 24px) / 2);
   }
 }
 

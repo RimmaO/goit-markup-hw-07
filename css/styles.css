@@ -769,13 +769,10 @@ ul {
 }
 .portfolio-list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-}
 
-.portfolio-item {
-  width: calc((100% - 48px) / 3);
+  row-gap: 48px;
 }
 
 .portfolio-link {
@@ -833,6 +830,9 @@ ul {
   border-left: 1px solid #e7e9fc;
 }
 .portfolio-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
   text-align: start;
 }
 .portfolio-text {

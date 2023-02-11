@@ -713,17 +713,18 @@ ul {
 .main {
 }
 .filter-portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .filter-list {
-  margin-bottom: 72px;
-
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: start;
+  column-gap: 24px;
+  row-gap: 16px;
+
+  margin-bottom: 48px;
 }
 
 .filter-list-item {

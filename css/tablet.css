@@ -140,6 +140,19 @@
   .header-contacts:focus {
     color: var(--hover-focus-color);
   }
+
+  .filter-portfolio {
+    padding-top: 64px;
+    padding-bottom: 96px;
+  }
+
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 64px;
+  }
 }
 
 @media screen and (max-width: 1199px) {

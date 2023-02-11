@@ -86,4 +86,17 @@
     padding-bottom: 188px;
     max-width: 1440px;
   }
+
+  .filter-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+  }
+  .filter-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+
+    margin-bottom: 72px;
+  }
 }

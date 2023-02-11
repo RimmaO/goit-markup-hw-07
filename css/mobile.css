@@ -10,6 +10,16 @@
   .active-tel {
     font-size: 36px;
   }
+
+  .modal {
+    width: 392px;
+  }
+  .modal-text {
+    font-size: 16px;
+  }
+  .modal-form-check-desc {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 480px),

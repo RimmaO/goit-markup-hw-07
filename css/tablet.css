@@ -2,6 +2,9 @@
   .container {
     width: calc(736px + 16px + 16px);
   }
+  .small-container {
+    width: calc(264px * 2 + 24px + 16px + 16px);
+  }
   .hero {
     background-image: var(--gra), url(../images/hero-bg.jpg);
   }
@@ -29,9 +32,6 @@
   .team-list-item {
     width: calc((100% - 24px) / 2);
   }
-  .small-container {
-    width: calc(264px * 2 + 24px + 16px + 16px);
-  }
 
   .customers-list {
     column-gap: 24px;
@@ -42,13 +42,13 @@
   }
   .footer-container {
     align-items: baseline;
-    justify-content: start;
+    justify-content: flex-start;
   }
   .footer-logo-text {
     margin-right: 24px;
   }
   .footer-form-input {
-    min-width: 264px;
+    width: 264px;
   }
 
   .footer-form-field {
@@ -65,6 +65,9 @@
   .hero {
     padding-top: 112px;
     padding-bottom: 108px;
+  }
+  .modal {
+    width: 408px;
   }
 }
 

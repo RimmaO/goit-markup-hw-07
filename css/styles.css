@@ -136,11 +136,6 @@ ul {
   justify-content: space-between;
 }
 
-.header-navigation {
-  display: flex;
-  margin-right: auto;
-}
-
 .header-logo-accent {
   font-family: "raleway", sans-serif;
   font-weight: 800;
@@ -312,6 +307,11 @@ ul {
   color: var(--footer-logo-color);
 }
 
+.header-navigation {
+  display: flex;
+  margin-right: 119px;
+}
+
 .header-list {
   display: flex;
   gap: 40px;
@@ -363,8 +363,8 @@ ul {
   gap: 4px;
 
   font-style: normal;
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 12px;
+  line-height: 1.33;
   letter-spacing: 0.02em;
 
   color: var(--text-contacts-color);
@@ -935,7 +935,7 @@ ul {
   transform: translate(-50%, -50%);
   width: 300px;
   min-height: 586px;
-  padding: 72px 16px 16px;
+  padding: 72px 24px 24px;
 
   background: #fcfcfc;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),

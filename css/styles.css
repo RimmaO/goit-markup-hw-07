@@ -235,7 +235,7 @@ ul {
 }
 
 .mobile-menu-list {
-  margin-bottom: 70px;
+  margin-bottom: auto;
 }
 .mobile-menu-link {
   font-weight: 700;
@@ -286,11 +286,12 @@ ul {
 }
 
 .mobile-menu-soc {
+  max-width: 328px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  gap: 56px;
+  justify-content: space-between;
 }
+
 .mobile-menu-soc-item {
   width: 40px;
   height: 40px;
@@ -1065,7 +1066,7 @@ ul {
   align-items: center;
 
   margin-bottom: 24px;
-  font-size: 9px;
+  font-size: 8px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: var(--modal-form-check-desc-color);

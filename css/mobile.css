@@ -65,6 +65,6 @@
   }
 
   .team-container.small-container {
-    width: 260px;
+    width: calc(264px + 16px + 16px);
   }
 }

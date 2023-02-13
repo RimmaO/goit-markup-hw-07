@@ -67,4 +67,8 @@
   .team-container.small-container {
     width: calc(264px + 16px + 16px);
   }
+
+  .modal {
+    overflow-y: scroll;
+  }
 }

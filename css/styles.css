@@ -864,8 +864,9 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   width: 300px;
-  min-height: 586px;
+  height: 586px;
   padding: 72px 24px 24px;
 
   background: #fcfcfc;
